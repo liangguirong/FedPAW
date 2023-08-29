@@ -39,7 +39,7 @@ parser.add_argument('--csv_file_val', type=str, default='data/skin_split/validat
 parser.add_argument('--csv_file_test', type=str, default='data/skin_split/test.csv', help='testing set csv file')
 parser.add_argument('--deterministic', type=int,  default=1, help='whether use deterministic training')
 parser.add_argument("--num_workers", default=0, type=int)
-parser.add_argument('--ema', type=float,  default=0.99, help='ema_decay')
+parser.add_argument('--ema', type=float,  default=0.999, help='ema_decay')
 parser.add_argument('--minw', type=float, default=1e-3)
 if __name__ == '__main__':
     args = parser.parse_args()
